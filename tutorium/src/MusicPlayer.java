@@ -35,6 +35,7 @@ public class MusicPlayer {
         p1.addSong(track2);
         p1.addSong(track3);
 
+        p1.removeSong(track3);
         Song[] allSongs = p1.getSongs();
 
         allSongs[0].displaySongInfo();

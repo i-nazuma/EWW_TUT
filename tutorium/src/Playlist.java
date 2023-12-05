@@ -27,11 +27,12 @@ public class Playlist {
     public void removeSong(Song songToRemove) {
         for (int i = 0; i < songCount; i++) {
             if(songs[i].equals(songToRemove)) {
+                //shift the rest of the books to fill the gap
                 for(int j = i; j < songCount - 1; j++) {
                     songs[j] = songs[j+1];
                 }
-                songs[songCount - 1] = null;
-                songCount--;
+                songs[songCount - 1] = null; // set the last book to null
+                songCount--; //decrease the book count
                 System.out.println("Song " + songToRemove.getTitle() + "has been removed from the playlist.");
                 return;
             }
