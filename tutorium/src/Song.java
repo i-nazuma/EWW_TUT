@@ -10,11 +10,10 @@ public class Song {
 
     public Song(
             String title,
-            Artist artist,
+            Artist artist, // now an artist instead of a string
             String genre,
             int length
     ) {
-        // this.title = title;
         setTitle(title);
         setArtist(artist);
         setGenre(genre);
